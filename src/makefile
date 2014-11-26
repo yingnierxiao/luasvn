@@ -1,6 +1,6 @@
 SUBVERSION=-I/usr/include/subversion-1
-APR=-I/usr/include/apr-1.0
-APR_UTIL=-I/usr/include/apr-1.0
+APR=-I/usr/include/apr
+APR_UTIL=-I/usr/include/apr
 
 
 CFLAGS=-Wall -O2 -fpic -D_REENTRANT -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -ggdb \
