@@ -1742,7 +1742,7 @@ l_update (lua_State *L) {
 }
 
 
-static const struct luaL_Reg svn [] = {
+static const struct luaL_reg svn [] = {
 	{"add", l_add},
 	{"cat", l_cat},
 	{"checkout", l_checkout},
@@ -1772,7 +1772,7 @@ static const struct luaL_Reg svn [] = {
 
 LUASVN_API
 luaopen_svn (lua_State *L) {
-	luaL_register (L, "svn", svn);
+	luaL_openlib(L, LUA_STRLIBNAME,svn,0);
 	return 1;
 }
 
