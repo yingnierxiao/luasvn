@@ -1742,7 +1742,7 @@ l_update (lua_State *L) {
 }
 
 
-static const struct luaL_reg svn [] = {
+static const struct luaL_Reg svn [] = {
 	{"add", l_add},
 	{"cat", l_cat},
 	{"checkout", l_checkout},
